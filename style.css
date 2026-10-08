@@ -175,3 +175,10 @@ footer {
     font-size: 2rem;
   }
 }
+.hobby-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  margin: 1rem 0;
+  display: block;
+}
