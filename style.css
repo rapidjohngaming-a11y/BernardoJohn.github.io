@@ -1,115 +1,236 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bernardo John Matthew | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">John Matthew</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <img src="profile.jpg" alt="Bernardo John Matthew" class="profile-pic">
-      <h1>Hello, I'm <span>Bernardo John Matthew</span></h1>
-      <h2>BSIT Student</h2>
-      <p>2nd Year student at ICCT College Cainta Branch. Passionate about technology, creativity, and continuous learning.</p>
-      <a href="#about" class="btn">Know More About Me</a>
-    </div>
-  </section>
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background-color: #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src="family.jpg" alt="My Family" class="family-photo">
-      <div class="about-text">
-        <p>
-          I’m Bernardo John Matthew, a 2nd-year BS Information Technology student at ICCT College Cainta Branch. 
-          I enjoy learning new things in technology while also expressing myself through creativity. 
-          When I’m not studying, you’ll often find me drawing, taking a stroll, or diving into story-rich games.
-        </p>
-        <p>
-          My family is my biggest motivation. They support me in everything I do and inspire me to keep working hard for a better future.
-        </p>
-      </div>
-    </div>
-  </section>
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
 
-  <!-- Education Section -->
-  <section id="education" class="education">
-    <h2>Education</h2>
-    <div class="edu-card">
-      <h3>Bachelor of Science in Information Technology</h3>
-      <p class="school">ICCT College – Cainta Branch</p>
-      <p class="year">2nd Year Student</p>
-    </div>
-  </section>
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">HTML & CSS</div>
-      <div class="skill-card">Basic JavaScript</div>
-      <div class="skill-card">GitHub</div>
-      <div class="skill-card">Problem Solving</div>
-      <div class="skill-card">Creativity</div>
-      <div class="skill-card">Time Management</div>
-    </div>
-  </section>
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: 0.3s;
+}
 
-  <!-- Hobbies Section -->
-  <section id="hobbies" class="hobbies">
-    <h2>Hobbies & Interests</h2>
-    
-    <div class="hobby-card">
-      <h3>Gaming</h3>
-      <img src="persona3.jpg" alt="Persona 3 Reload" class="hobby-img">
-      <p><strong>Favorite Game:</strong> Persona 3 Reload</p>
-      <p>
-        I love Persona 3 Reload because of its deep story, memorable characters, 
-        and the perfect mix of turn-based combat and life simulation. 
-        It inspires me with themes of friendship, growing up, and making the most of every day.
-      </p>
-    </div>
+.nav-links a:hover {
+  color: #38bdf8;
+}
 
-    <div class="hobby-card">
-      <h3>Drawing</h3>
-      <p>I enjoy drawing during my free time. It’s my way of relaxing and expressing creativity when I have nothing else to do.</p>
-    </div>
+/* Hero */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+}
 
-    <div class="hobby-card">
-      <h3>Taking a Stroll</h3>
-      <p>I like going for walks. It helps me clear my mind, reduce stress, and think better.</p>
-    </div>
-  </section>
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  margin-bottom: 1.5rem;
+}
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out through my email:</p>
-    <a href="mailto:Bernardojohngaming@gmail.com" class="email-link">Bernardojohngaming@gmail.com</a>
-  </section>
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
 
-  <footer>
-    <p>© 2026 Bernardo John Matthew. All rights reserved.</p>
-  </footer>
+.hero-content h1 span {
+  color: #38bdf8;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.hero-content h2 {
+  font-size: 1.3rem;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+/* Sections */
+section {
+  padding: 5rem 8%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #38bdf8;
+}
+
+/* About Section with Family Photo */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.family-photo {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+/* Education */
+.edu-card {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: #1e293b;
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* Hobbies */
+.hobby-card {
+  background: #1e293b;
+  padding: 1.8rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hobby-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.6rem;
+}
+
+.hobby-img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  margin: 1rem 0;
+  display: block;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+
+.email-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .family-photo {
+    width: 100%;
+    max-width: 300px;
+  }
+}
