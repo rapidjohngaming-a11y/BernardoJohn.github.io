@@ -10,10 +10,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Theme Toggle
 const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
-  themeToggle.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
-});
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    themeToggle.textContent = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
+  });
+}
 
 // Scroll to Top Button
 const scrollTopBtn = document.getElementById('scrollTopBtn');
@@ -32,3 +34,21 @@ scrollTopBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+// ===== Scroll Reveal Animation =====
+function revealOnScroll() {
+  const reveals = document.querySelectorAll('.reveal');
+
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    const revealPoint = 120;
+
+    if (elementTop < windowHeight - revealPoint) {
+      el.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
