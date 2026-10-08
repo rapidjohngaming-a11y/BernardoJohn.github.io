@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bernardo John Matthew | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="profile.jpg" type="image/jpeg">
 </head>
 <body>
 
@@ -17,8 +18,10 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#goals">Goals</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
   </nav>
 
   <!-- Hero Section -->
@@ -28,6 +31,9 @@
       <h1>Hello, I'm <span>Bernardo John Matthew</span></h1>
       <h2>BSIT Student</h2>
       <p>2nd Year student at ICCT College Cainta Branch. Passionate about technology, creativity, and continuous learning.</p>
+      
+      <p class="motto">"Don't expect anything for free as you need to work for it unless it's family."</p>
+      
       <a href="#about" class="btn">Know More About Me</a>
     </div>
   </section>
@@ -77,45 +83,103 @@
 <section id="hobbies" class="hobbies">
   <h2>Hobbies & Interests</h2>
   
-  <!-- Gaming Card -->
+  <!-- Main Favorite Game -->
   <div class="hobby-card game-card">
-    <a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/" target="_blank" class="game-image-link">
+    <a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/" target="_blank">
       <img src="persona3.jpg" alt="Persona 3 Reload" class="hobby-img">
     </a>
     <div class="game-info">
-      <h3>Gaming</h3>
-      <p><strong>Favorite Game:</strong> Persona 3 Reload</p>
+      <h3>Favorite Game</h3>
+      <p><strong>Persona 3 Reload</strong></p>
       <p>
         I love Persona 3 Reload because of its deep story, memorable characters, 
-        and the perfect mix of turn-based combat and life simulation. 
-        It inspires me with themes of friendship, growing up, and making the most of every day.
+        and the perfect mix of turn-based combat and life simulation.
       </p>
-      <a href="https://store.steampowered.com/app/2161700/Persona_3_Reload/" target="_blank" class="steam-btn">
-        View on Steam →
-      </a>
     </div>
   </div>
 
-  <!-- Drawing -->
-  <div class="hobby-card">
-    <h3>Drawing</h3>
-    <p>I enjoy drawing during my free time. It’s my way of relaxing and expressing creativity when I have nothing else to do.</p>
+  <!-- Games Gallery -->
+  <h3 class="gallery-title">Games I Enjoy</h3>
+  <div class="games-gallery">
+    <div class="game-item">
+      <img src="persona3.jpg" alt="Persona 3 Reload">
+      <p>Persona 3 Reload</p>
+    </div>
+    <div class="game-item">
+      <img src="persona3.jpg" alt="Game 2">
+      <p>Game Name 2</p>
+    </div>
+    <div class="game-item">
+      <img src="persona3.jpg" alt="Game 3">
+      <p>Game Name 3</p>
+    </div>
+    <div class="game-item">
+      <img src="persona3.jpg" alt="Game 4">
+      <p>Game Name 4</p>
+    </div>
   </div>
 
-  <!-- Taking a Stroll -->
+  <!-- Other Hobbies -->
   <div class="hobby-card">
-    <h3>
+    <h3>Drawing</h3>
+    <p>I enjoy drawing during my free time. It’s my way of relaxing and expressing creativity.</p>
+  </div>
+
+  <div class="hobby-card">
+    <h3>Taking a Stroll</h3>
+    <p>I like going for walks. It helps me clear my mind and reduce stress.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out!</p>
+  
+  <a href="mailto:Bernardojohngaming@gmail.com" class="email-link">
+    Bernardojohngaming@gmail.com
+  </a>
+
+  <div class="social-links">
+    <a href="https://www.facebook.com/johnmatthew.bernardo/" target="_blank" class="facebook-btn">
+      Facebook
+    </a>
+  </div>
+</section>
+  <!-- Goals Section -->
+  <section id="goals" class="goals">
+    <h2>Future Goals</h2>
+    <div class="goals-container">
+      <div class="goal-card">
+        <h3>Short-term</h3>
+        <p>Improve my web development skills and finish my BSIT degree with good standing.</p>
+      </div>
+      <div class="goal-card">
+        <h3>Long-term</h3>
+        <p>Become a skilled IT professional, support my family, and keep growing through continuous learning.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <p>Feel free to reach out through my email:</p>
-    <a href="mailto:Bernardojohnmatthew123@gmail.com" class="email-link">Bernardojohnjohnmatthew123@gmail.com</a>
+    <a href="mailto:Bernardojohngaming@gmail.com" class="email-link">Bernardojohngaming@gmail.com</a>
+
+    <div class="social-links">
+      <!-- You can add real links later -->
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+    </div>
   </section>
 
   <footer>
     <p>© 2026 Bernardo John Matthew. All rights reserved.</p>
   </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">↑</button>
 
   <script src="script.js"></script>
 </body>
