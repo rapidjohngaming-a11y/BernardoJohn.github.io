@@ -298,3 +298,58 @@ footer {
     gap: 1rem;
   }
 }
+/* Game Card Special Layout */
+.game-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.game-image-link {
+  flex-shrink: 0;
+}
+
+.game-card .hobby-img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 12px;
+  transition: 0.3s;
+  display: block;
+}
+
+.game-card .hobby-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.35);
+}
+
+.game-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.steam-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.steam-btn:hover {
+  background-color: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .game-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
