@@ -375,3 +375,30 @@ footer {
     max-width: 280px;
   }
 }
+#home {
+  background: linear-gradient(to bottom, #0b1220, #0f172a);
+}
+
+#about {
+  background-color: #0f172a;
+}
+
+#education {
+  background-color: #172033;
+}
+
+#skills {
+  background-color: #0f172a;
+}
+
+#hobbies {
+  background-color: #1a233a;
+}
+
+#goals {
+  background-color: #0f172a;
+}
+
+#contact {
+  background-color: #172033;
+}
