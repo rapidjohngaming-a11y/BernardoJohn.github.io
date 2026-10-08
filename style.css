@@ -38,7 +38,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -72,7 +72,7 @@ body {
   margin-left: 1rem;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   min-height: 90vh;
   display: flex;
@@ -147,7 +147,7 @@ h2 {
   color: var(--accent);
 }
 
-/* About */
+/* About Section */
 .about-container {
   display: flex;
   align-items: center;
@@ -172,8 +172,10 @@ h2 {
   min-width: 280px;
 }
 
-/* Education & Cards */
-.edu-card, .hobby-card, .goal-card {
+/* Cards */
+.edu-card,
+.hobby-card,
+.goal-card {
   background: var(--card-bg);
   padding: 1.8rem;
   border-radius: 12px;
@@ -184,7 +186,9 @@ h2 {
   transition: 0.3s;
 }
 
-.edu-card:hover, .hobby-card:hover, .goal-card:hover {
+.edu-card:hover,
+.hobby-card:hover,
+.goal-card:hover {
   transform: translateY(-6px);
 }
 
@@ -211,7 +215,7 @@ h2 {
   transform: translateY(-5px);
 }
 
-/* Game Card */
+/* Favorite Game Card */
 .game-card {
   display: flex;
   gap: 2rem;
@@ -229,15 +233,46 @@ h2 {
   transform: scale(1.05);
 }
 
-.steam-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: var(--accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
+/* Games Gallery - Horizontal */
+.gallery-title {
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.games-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+}
+
+.game-item {
+  width: 180px;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.35s;
+  display: block;
+}
+
+.game-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.game-item:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.game-item:hover img {
+  transform: scale(1.1);
 }
 
 /* Goals */
@@ -263,18 +298,21 @@ h2 {
   font-weight: 600;
 }
 
-.social-links {
-  margin-top: 1.5rem;
-}
-
-.social-links a {
-  margin: 0 1rem;
-  color: var(--muted);
+.facebook-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.7rem 1.8rem;
+  background-color: #1877f2;
+  color: white !important;
   text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.social-links a:hover {
-  color: var(--accent);
+.facebook-btn:hover {
+  background-color: #0d65d9;
+  transform: translateY(-3px);
 }
 
 /* Footer */
@@ -285,7 +323,7 @@ footer {
   color: var(--muted);
 }
 
-/* Scroll to Top */
+/* Scroll to Top Button */
 #scrollTopBtn {
   position: fixed;
   bottom: 30px;
@@ -315,76 +353,19 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .about-container, .game-card {
+  .about-container,
+  .game-card {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .nav-links {
     gap: 0.8rem;
     font-size: 0.9rem;
   }
-  /* Games Gallery */
-.gallery-title {
-  text-align: center;
-  margin: 3rem 0 1.5rem;
-  color: var(--accent);
-  font-size: 1.5rem;
-}
 
-.games-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  max-width: 900px;
-  margin: 0 auto 3rem;
-}
-
-.game-item {
-  background: var(--card-bg);
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: center;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.game-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  transition: 0.4s;
-}
-
-.game-item p {
-  padding: 0.8rem;
-  font-weight: 500;
-}
-
-.game-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-}
-
-.game-item:hover img {
-  transform: scale(1.08);
-}
-
-/* Facebook Button */
-.facebook-btn {
-  display: inline-block;
-  margin-top: 1.2rem;
-  padding: 0.7rem 1.5rem;
-  background-color: #1877f2;
-  color: white !important;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.facebook-btn:hover {
-  background-color: #0d65d9;
-  transform: translateY(-3px);
-}
+  .hobby-img {
+    width: 100%;
+    max-width: 280px;
+  }
 }
