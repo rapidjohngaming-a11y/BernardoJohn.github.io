@@ -215,7 +215,7 @@ h2 {
   transform: translateY(-5px);
 }
 
-/* Favorite Game Card */
+/* Favorite Game Layout */
 .game-card {
   display: flex;
   gap: 2rem;
@@ -223,14 +223,20 @@ h2 {
   flex-wrap: wrap;
 }
 
-.hobby-img {
+.game-card .hobby-img {
   width: 260px;
   border-radius: 12px;
   transition: 0.3s;
+  display: block;
 }
 
-.hobby-img:hover {
+.game-card .hobby-img:hover {
   transform: scale(1.05);
+}
+
+.game-info {
+  flex: 1;
+  min-width: 250px;
 }
 
 /* Games Gallery - Horizontal */
